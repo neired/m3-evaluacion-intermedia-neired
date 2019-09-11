@@ -6,7 +6,7 @@ import './PokeList.scss';
 class PokeList extends React.Component {
   render () {
     return (
-      <ul className="pokemon-list">
+      <ol className="pokemon-list">
         {this.props.pokemons.map((pokemon, index) => {
           return (
             <li className="card-container__li" key={index}>
@@ -18,7 +18,7 @@ class PokeList extends React.Component {
             </li>
           );
         })}
-      </ul>   
+      </ol>   
     )
   }
 }
