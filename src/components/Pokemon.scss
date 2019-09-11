@@ -6,24 +6,28 @@
   width: 150px;
   height: 205px;
 }
-.poke-img {
+.poke-img__div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.poke-img {
+  width: 120px;
 }
 .poke-name {
   text-align: center;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: capitalize;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: 0 auto;
 }
 .poke-types {
   display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
+  padding: 10px;
 }
 .poke-type {
   border-radius: 7px;

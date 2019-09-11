@@ -5,8 +5,8 @@ class Pokemon extends React.Component {
   render () {
     return (
       <div className="card-container__div">
-        <div className="poke-img">
-          <img src={this.props.url} alt={this.props.name}></img>
+        <div className="poke-img__div">
+          <img className="poke-img" src={this.props.url} alt={this.props.name}></img>
         </div>
         <h2 className="poke-name">{this.props.name}</h2>
         <ul className="poke-types">
