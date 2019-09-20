@@ -10,7 +10,7 @@ class PokeList extends React.Component {
       <ol className="pokemon-list">
         {pokemons.map((pokemon, index) => {
           return (
-            <li className="card-container__li" key={index}>
+            <li className="card-container__li" key={pokemon.id}>
               <Pokemon 
                 name={pokemon.name}
                 types={pokemon.types}
