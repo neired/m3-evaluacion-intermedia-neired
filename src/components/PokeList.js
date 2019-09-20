@@ -5,9 +5,10 @@ import './PokeList.scss';
 
 class PokeList extends React.Component {
   render () {
+    const { pokemons } = this.props
     return (
       <ol className="pokemon-list">
-        {this.props.pokemons.map((pokemon, index) => {
+        {pokemons.map((pokemon, index) => {
           return (
             <li className="card-container__li" key={index}>
               <Pokemon 
