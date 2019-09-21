@@ -5,13 +5,14 @@ import './PokeList.scss';
 
 class PokeList extends React.Component {
   render () {
-    const { pokemons, handleClick } = this.props
+    const { pokemons, handleClick, favs } = this.props
     return (
       <ol className="pokemon-list">
         {pokemons.map(pokemon => {
           return (
             <li className="card-container__li" key={pokemon.id} id={pokemon.id} onClick={handleClick}>
               <Pokemon 
+                favs={favs}
                 name={pokemon.name}
                 types={pokemon.types}
                 url={pokemon.url}
@@ -28,6 +29,7 @@ class PokeList extends React.Component {
 PokeList.propTypes = {
   pokemons : PropTypes.arrayOf(PropTypes.object).isRequired,
   handleClick : PropTypes.func.isRequired,
+  favs : PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default PokeList;

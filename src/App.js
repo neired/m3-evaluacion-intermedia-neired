@@ -29,23 +29,8 @@ class App extends React.Component {
       return {
         favs: newFavs
       }
-  });
-}
-  // deleteFav(event) {
-  //   const showID = parseInt(event.currentTarget.getAttribute('data-id'));
-    
-  //   this.setState(prevState => {
-  //     const newFavs = [...prevState.favs];
-  //     const result = newFavs.findIndex(item => item.show.id === showID);
-  //     newFavs.splice(result,1);
-
-  //     localStorage.setItem('favs', JSON.stringify(newFavs));
-
-  //     return {
-  //       favs: newFavs
-  //     }
-  //   });
-  // }
+    });
+  }
 
   render() {
     const { pokemons, favs } = this.state;
