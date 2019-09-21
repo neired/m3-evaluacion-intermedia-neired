@@ -2,7 +2,6 @@
   border: 1px black solid;
   font-family: sans-serif;
   border-radius: 5px;
-  background-color: rgb(214, 228, 233);
   width: 150px;
   height: 205px;
 }
@@ -37,4 +36,11 @@
   font-size: 12px;
   padding: 3px;
   margin-right: 10px;
+}
+
+.card {
+  background-color: rgb(214, 228, 233);
+}
+.card-fav {
+  background-color: rgb(163, 218, 163);
 }

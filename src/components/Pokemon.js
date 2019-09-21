@@ -4,14 +4,14 @@ import './Pokemon.scss';
 
 class Pokemon extends React.Component {
   render () {
-    const { url, name, types } = this.props
+    const { url, name, types, id } = this.props
 
     return (
-      <div className="card-container__div">
+      <div className="card-container__div card" id={id}>
         <div className="poke-img__div">
           <img className="poke-img" src={url} alt={name}></img>
         </div>
-        <h2 className="poke-name">{name}</h2>
+          <h2 className="poke-name">{name}</h2>
         <ul className="poke-types">
           {types.map((type, index) => {
             return (
@@ -25,9 +25,10 @@ class Pokemon extends React.Component {
 }
 
 Pokemon.propTypes = {
-  name: PropTypes.string,
-  types: PropTypes.arrayOf(PropTypes.string),
-  url: PropTypes.string
+  name: PropTypes.string.isRequired,
+  types: PropTypes.arrayOf(PropTypes.string).isRequired,
+  url: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired
 }
 
 export default Pokemon;
